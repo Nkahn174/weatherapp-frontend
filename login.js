@@ -5,7 +5,7 @@ document.querySelector("#register").addEventListener("click", function () {
     password: document.querySelector("#registerPassword").value,
   };
 
-  fetch("https://weatherapp-backend-amber-eta.vercel.app//users/signup", {
+  fetch("https://weatherapp-backend-amber-eta.vercel.app/users/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),

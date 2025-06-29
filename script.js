@@ -1,4 +1,4 @@
-fetch("https://weatherapp-backend-amber-eta.vercel.app//weather")
+fetch("https://weatherapp-backend-amber-eta.vercel.app/weather")
   .then((response) => response.json())
   .then((data) => {
     if (data.weather) {
@@ -27,7 +27,7 @@ function updateDeleteCityEventListener() {
       .querySelectorAll(".deleteCity")
       [i].addEventListener("click", function () {
         fetch(
-          `https://weatherapp-backend-amber-eta.vercel.app//weather/${this.id}`,
+          `https://weatherapp-backend-amber-eta.vercel.app/weather/${this.id}`,
           { method: "DELETE" }
         )
           .then((response) => response.json())
